@@ -2,11 +2,11 @@
   width: 90%;
   margin: 6rem auto;
 }
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   .hero-container {
     overflow-x: hidden;
   }
-}
+} */
 
 .card-image-1 {
   position: relative;

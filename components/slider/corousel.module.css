@@ -36,7 +36,7 @@
   font-weight: 500;
   margin-bottom: 2rem;
 }
-.corousel-head-btn {
+.corouselHeadBtn {
   display: flex;
   flex-direction: row;
   gap: 2rem;
@@ -75,6 +75,7 @@
     margin-bottom: 2rem;
   }
   .corousel {
-    margin-right: 2rem;
+    margin-right: 4rem;
+    padding-right: 2rem;
   }
 }

@@ -171,7 +171,7 @@ const Corousel = () => {
           <h5>There are many variations passages</h5>
         </div>
         <div className={style.line} />
-        <div className={style["corousel-head-btn"]}>
+        <div className={style["corouselHeadBtn"]}>
           <PrevIcon onClick={() => sliderRef.current?.slickPrev()} />
           <NextIcon onClick={() => sliderRef.current?.slickNext()} />
         </div>
