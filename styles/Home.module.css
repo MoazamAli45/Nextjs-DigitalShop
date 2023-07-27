@@ -15,6 +15,7 @@
 @media (max-width: 800px) {
   .laptop-container {
     padding: 3rem 2rem;
+    overflow-x: hidden;
   }
 }
 

@@ -177,13 +177,14 @@ const Corousel = () => {
         </div>
       </div>
 
-        <Slider
-          {...settings}
-          className={style.slider}
-          data-aos="fade-up"
-          ref={sliderRef}
-        >
-          {shopCards.map((card, index) => (
+      <Slider
+        {...settings}
+        className={style.slider}
+        data-aos="fade-up"
+        ref={sliderRef}
+      >
+        {shopCards.map((card, index) => (
+          <div className={style.corousel} key={index}>
             <ShopCard
               image1={card.image1}
               image2={card.image2}
@@ -196,10 +197,10 @@ const Corousel = () => {
               width={"24rem"}
               right={"6rem"}
             />
-          ))}
-        </Slider>
-      </div>
-  
+          </div>
+        ))}
+      </Slider>
+    </div>
   );
 };
 
