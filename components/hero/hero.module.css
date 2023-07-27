@@ -1,0 +1,352 @@
+.hero-container {
+  width: 90%;
+  margin: 6rem auto;
+}
+
+.card-image-1 {
+  position: relative;
+  object-fit: contain;
+  width: 40rem;
+  height: 30rem;
+}
+.card-image-2 {
+  position: relative;
+  object-fit: contain;
+  width: 35rem;
+  height: 30rem;
+  margin-top: -13rem;
+  top: -2rem;
+  z-index: 1;
+  animation: topToBottom 1s ease-in-out;
+}
+.card-image-3 {
+  position: relative;
+  object-fit: contain;
+  width: 30rem;
+  height: 30rem;
+}
+
+.hero-card-top {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(25rem, 1fr));
+  /* flex-direction: row; */
+  width: 100%;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 990px) {
+  .hero-card-top {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 100%;
+  }
+  .hero-card {
+    width: 100%;
+  }
+  .hero-card-2 {
+    margin-top: 2rem;
+  }
+}
+.hero-card {
+  /* width: 32%; */
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* gap: 8rem; */
+}
+.hero-card-1,
+.hero-card-3 {
+  background-color: #080d13;
+  color: white;
+
+  padding-top: 6rem;
+  transition: all 0.3s;
+}
+
+.hero-card-3 {
+  padding-inline: 4rem;
+  transition: all 0.3s;
+}
+
+.hero-card-2 {
+  background-color: #fe724a;
+  color: white;
+  padding-bottom: 10rem;
+  transition: all 0.3s;
+}
+.hero-card-2:hover {
+  box-shadow: 0px 5px 20px 10px #fe724a;
+}
+.card-text-2 {
+  padding-bottom: 4rem;
+}
+
+.hero-card h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.hero-card h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.card-text button {
+  text-align: center;
+  border-radius: 5rem;
+  border: none;
+  padding: 2rem 2.5rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.card-text button:hover {
+  background-color: white;
+  color: #080d13;
+}
+.card-text .btn1 {
+  background: radial-gradient(
+    circle,
+    rgba(85, 162, 186, 1) 0%,
+    rgba(114, 176, 158, 1) 100%
+  );
+}
+.card-text .btn1:hover {
+  background: white;
+}
+
+.card-text .btn2 {
+  background-color: #080d13;
+}
+
+.card-text .btn3 {
+  /* background-image: linear-gradient(
+    to right,
+    #c80d7f,
+    #fe0441,
+    #fe5d49,
+    #fda811
+  ); */
+  background-image: url("../../public/images/footer-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card-text .btn3:hover {
+  background: white;
+}
+
+/*  Animation top bottom */
+@keyframes topToBottom {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+/*          Bottom cards */
+.hero-card-bottom {
+  display: grid;
+  width: 100%;
+  /* grid-template-columns: 0.7fr 0.8fr 0.7fr; */
+
+  grid-template-columns: minmax(25rem, 0.7fr) minmax(25rem, 0.9fr) minmax(
+      25rem,
+      0.7fr
+    );
+  gap: 2rem;
+  margin: 2rem 0;
+}
+@media screen and (max-width: 990px) {
+  .hero-card-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .hero-card-6 {
+    margin-left: 0rem !important;
+  }
+  .hero-card-5A,
+  .hero-card-5B {
+    padding: 2rem;
+  }
+}
+
+.hero-card-4 {
+  background-color: #86888c;
+  padding-top: 6rem;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+.hero-card-4:hover {
+  box-shadow: 0px 10px 20px 5px #86888c;
+}
+.btn4 {
+  background-color: #080d13;
+}
+.hero-card-5 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hero-card-5A {
+  background-color: #dfdfdf;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: row;
+  padding-left: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  transition: all 0.3s;
+}
+.hero-card-5A:hover {
+  box-shadow: 0px 10px 20px 5px #dfdfdf;
+}
+.hero-card-5B {
+  background-color: #cf374c;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: row;
+  padding-left: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  transition: all 0.3s;
+  transition: all 0.3s;
+}
+.hero-card-5B:hover {
+  box-shadow: 0px 10px 20px 5px #cf374c;
+}
+.btn5A {
+  background-color: white;
+  color: #080d13;
+
+  text-align: center;
+  border-radius: 5rem;
+  border: none;
+  padding: 2rem 2.5rem;
+  margin: 1.5rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  /* width: 100%; */
+}
+
+.hero-card-5B .card-text {
+  width: 70%;
+  color: white;
+}
+.hero-card-5B .card-text h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.hero-card-5B .card-text h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.btn5A:hover {
+  background-color: #080d13;
+  color: white;
+}
+.btn5B {
+  background-color: #080d13;
+}
+.card-image-5A {
+  position: relative;
+  object-fit: contain;
+  width: 35rem;
+  height: 25rem;
+  /* right: -10rem; */
+  margin-right: -8rem;
+  padding-bottom: -20rem;
+  z-index: 1;
+  animation: topToBottom 1s ease-in-out;
+}
+.card-image-5B {
+  position: relative;
+  object-fit: contain;
+  width: 30rem;
+  height: 20rem;
+  /* right: -10rem; */
+  margin-right: -8rem;
+  margin-bottom: -10rem;
+  bottom: -2rem;
+  z-index: 1;
+  animation: topToBottom 1s ease-in-out;
+}
+
+@media screen and (max-width: 990px) {
+  .card-image-5A,
+  .card-image-5B {
+    width: 20rem;
+    height: 15rem;
+    margin-right: -5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn5A {
+    width: 100%;
+  }
+}
+.hero-card-5A .card-text-5 {
+  width: 80%;
+}
+
+.hero-card-5A .card-text-5 h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.hero-card-5A .card-text-5 h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.hero-card-6 {
+  background-color: #080d13;
+  margin-left: 3rem;
+  color: white;
+  padding-top: 4rem;
+  transition: all 0.3s;
+}
+.hero-card-6 .card-text h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.hero-card-6 .card-text h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.btn6 {
+  background: radial-gradient(
+    circle,
+    rgba(225, 203, 153, 1) 0%,
+    rgba(212, 184, 126, 1) 100%
+  );
+}
+
+.btn6:hover {
+  background-color: white;
+}
+
+.hero-card-1:hover,
+.hero-card-3:hover {
+  box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.75);
+}
+.hero-card-6:hover {
+  box-shadow: 0px 10px 20px 5px #080d13;
+}

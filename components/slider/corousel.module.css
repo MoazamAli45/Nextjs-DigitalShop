@@ -1,0 +1,78 @@
+.corousel-container {
+  width: 90%;
+  margin: 8rem auto;
+}
+.corousel-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  display: relative;
+}
+.line {
+  width: 45%;
+  height: 1px;
+  border: 1px solid #bbbbbb;
+}
+@media screen and (max-width: 768px) {
+  .line {
+    display: none;
+  }
+}
+.corousel-head h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 24px;
+  padding-bottom: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .corousel-head h2 {
+    font-size: 3rem;
+  }
+}
+.corousel-head h5 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.corousel-head-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.prev,
+.next {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: solid 2px #bbbbbb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #222dc3;
+  border: solid 2px #222dc3;
+}
+.prev:hover .prevIcon,
+.next:hover .nextIcon {
+  color: white;
+}
+
+.prevIcon,
+.nextIcon {
+  font-size: 2rem;
+  color: #bbbbbb;
+}
+
+@media (max-width: 576px) {
+  .corousel-head {
+    margin-bottom: 2rem;
+  }
+}
+

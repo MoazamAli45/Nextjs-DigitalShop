@@ -1,0 +1,79 @@
+/* background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url */
+
+.card {
+  border: 1px solid #d4d7dc;
+  border-radius: 3rem;
+  padding: 5rem 4rem;
+  /* width: 30rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); */
+  overflow: hidden;
+  transition: all 0.7s ease;
+}
+.card:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/* .card:hover .content{
+    color:white;
+}
+.card:hover .read{
+    color:white;
+}
+.card:hover .date{
+color:white;
+} */
+
+/* .image {
+  position: absolute;
+  object-fit: fill;
+  width: 30rem;
+  height: 40rem;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+*/
+
+@media screen and (max-width: 576px) {
+  .card {
+    width: 100%;
+  }
+}
+.card:hover .image {
+  display: block;
+}
+.image {
+  display: none;
+}
+
+.date {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.content {
+  font-size: 1.6rem;
+  font-weight: 600;
+  /* width: 90%; */
+  line-height: 33px;
+}
+.read {
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.line {
+  border: solid 0.2rem #4f56db;
+  width: 90%;
+  /* margin:2rem auto; */
+  margin: 2rem 0;
+}
+.card:hover .line {
+  border: solid 0.2rem #ffffff;
+}

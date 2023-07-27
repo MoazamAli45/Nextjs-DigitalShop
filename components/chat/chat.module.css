@@ -1,0 +1,17 @@
+.chat {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background-color: #527ceb;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 2;
+}
+.icon {
+  font-size: 3.5rem;
+  color: white;
+}
