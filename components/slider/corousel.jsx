@@ -193,8 +193,8 @@ const Corousel = () => {
               price={card.price}
               discount={card.discount}
               key={index}
-              width={"26rem"}
-              right={"2rem"}
+              width={"24rem"}
+              right={"6rem"}
             />
           ))}
         </Slider>

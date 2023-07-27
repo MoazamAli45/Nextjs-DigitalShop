@@ -1,6 +1,12 @@
 .container {
   width: 90%;
   margin: 2rem auto;
+  /* overflow-x:hidden; */
+}
+@media (max-width: 576px) {
+  .container {
+    overflow-x: hidden;
+  }
 }
 .footer-box {
   display: flex;
@@ -93,12 +99,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
     gap: 1rem;
   }
   .footer-textfield button {
     position: static;
     width: 100%;
     height: 8rem;
+  }
+  .footer-textfield input::placeholder {
+    font-size: 1.3rem;
   }
 }
 .footer-image {
@@ -190,22 +200,23 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-block: 1rem;
+  /* padding-block: 1rem; */
 }
 @media screen and (max-width: 767px) {
   .footer-bottom {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 90%;
+
     gap: 2rem;
+    font-size: 1.4rem;
   }
 }
 
 .footer-icons {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 10px;
 }
 .insta:hover {
   color: #f91071;
