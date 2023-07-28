@@ -25,7 +25,7 @@ const links = [
   },
   {
     name: "Shop",
-    path: "/shop",
+    path: "#",
   },
   {
     name: "Blog",
@@ -33,7 +33,7 @@ const links = [
   },
   {
     name: "Contact",
-    path: "/contact",
+    path: "#",
   },
 ];
 
