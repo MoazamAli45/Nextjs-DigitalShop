@@ -20,17 +20,20 @@ const ShopCard = (props) => {
 
   const sale = props.sales || false;
   let width = props.width || "";
-  let marginRight = props.right || "";
+  let mobileWidth='';
+  let marginRight='';
 
-  if (isMobile) {
-    width = "22rem";
+  if (isMobile && props.width) {
+    width = "21rem";
+   mobileWidth = "18rem";
+    marginRight="4rem";
   }
 
   return (
     <>
       <div
         className={style["shop-card"]}
-        style={{ width: `${width}`, "margin-right": `${marginRight}  ` }}
+        style={{ width: `${width}`, "margin-right": `${marginRight} !important ` }}
       >
         <div className={style.image}>
           {sale && <span className={style.sale}>Sale!</span>}
@@ -42,10 +45,10 @@ const ShopCard = (props) => {
               <AiOutlineHeart />
             </span>
           </div>
-          <div className={style.image1}>
+          <div className={style.image1}  style={{ width: `${mobileWidth}`}}>
             <Image src={image1} alt={image1} fill />
           </div>
-          <div className={style.image2}>
+          <div className={style.image2}  style={{ width: `${mobileWidth}`}}>
             <Image src={image2} alt={image2} fill />
           </div>
         </div>

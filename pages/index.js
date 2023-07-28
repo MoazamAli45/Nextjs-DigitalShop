@@ -82,7 +82,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Hero />
+        {/* <Hero /> */}
         <ShopCards />
         {/*  Laptop -bg  */}
         <div className={`${style["laptop-container"]}`} data-aos="fade-up">
