@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import style from "./shopCard.module.css";
 import Image from "next/image";
 
@@ -7,17 +7,30 @@ import { AiOutlineHeart } from "react-icons/ai";
 import { AiOutlineEye } from "react-icons/ai";
 
 const ShopCard = (props) => {
+  const [isMobile, setIsMobile] = useState(false);
   const { image1, image2, head, text, discount, price } = props;
+  useEffect(() => {
+    const userAgent = window.navigator.userAgent;
+    const mobileRegex =
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+
+    setIsMobile(mobileRegex.test(userAgent));
+    console.log(mobileRegex.test(userAgent), "isMobile");
+  }, []);
 
   const sale = props.sales || false;
-  const width = props.width || "";
-  const marginRight = props.right || "";
+  let width = props.width || "";
+  let marginRight = props.right || "";
+
+  if (isMobile) {
+    width = "22rem";
+  }
 
   return (
     <>
       <div
         className={style["shop-card"]}
-        style={{ width: `${width}`, 'margin-right': `${marginRight}  ` }}
+        style={{ width: `${width}`, "margin-right": `${marginRight}  ` }}
       >
         <div className={style.image}>
           {sale && <span className={style.sale}>Sale!</span>}

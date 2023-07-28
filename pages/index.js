@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import Head from "next/head";
 import Image from "next/image";
 import style from "../styles/Home.module.css";
@@ -19,9 +19,9 @@ import bg2 from "../public/images/bg2.jpg";
 import bg3 from "../public/images/bg3.jpg";
 import bg4 from "../public/images/bg4.jpg";
 
-import {useEffect} from 'react';
+import { useEffect } from "react";
 
-//  AOS Library 
+//  AOS Library
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -82,11 +82,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Hero  />
-        <ShopCards  />
+        <Hero />
+        <ShopCards />
         {/*  Laptop -bg  */}
-        <div className={`${style["laptop-container"]}`}  data-aos="fade-up">
-          <div className={`${style["laptop-bg-overlay"]}`} data-aos="fade-up"></div>
+        <div className={`${style["laptop-container"]}`} data-aos="fade-up">
+          <div
+            className={`${style["laptop-bg-overlay"]}`}
+            data-aos="fade-up"
+          ></div>
           <div className={style.content}>
             <div className={style.text}>
               <h5>Asus Zenbook Duo</h5>
@@ -106,7 +109,10 @@ export default function Home() {
         <Corousel />
         {/*    Two Cards */}
         <div className={` ${style.accessories} `}>
-          <div className={`${style.card} ${style["card-1"]}`} data-aos="fade-up">
+          <div
+            className={`${style.card} ${style["card-1"]}`}
+            data-aos="fade-up"
+          >
             <div className={style["camera-overlay"]} />
             <h5> camera Accessories</h5>
             <h2>
@@ -116,7 +122,10 @@ export default function Home() {
               Shop By Category
             </button>
           </div>
-          <div className={`${style.card} ${style["card-2"]}`} data-aos="fade-up">
+          <div
+            className={`${style.card} ${style["card-2"]}`}
+            data-aos="fade-up"
+          >
             <div className={style["videogame-overlay"]} />
             <h5> game Accessories</h5>
             <h2>
@@ -128,7 +137,7 @@ export default function Home() {
           </div>
         </div>
 
-                                  {/*     Cards */}
+        {/*     Cards */}
         <div className={`${style.container} ${style["card-container"]}`}>
           <h3>Latest Posts</h3>
 
@@ -138,11 +147,15 @@ export default function Home() {
             ))}
           </div>
         </div>
-                  {/* Online Payments  */}
+        {/* Online Payments  */}
         <div className={`${style["payment-container"]}`}>
           <div className={style["grid-container"]}>
             {onlinePayments.map((card, index) => (
-              <div className={style["card-payment"]} key={index} data-aos="fade-up">
+              <div
+                className={style["card-payment"]}
+                key={index}
+                data-aos="fade-up"
+              >
                 <div className={style.icon}>{card.icon}</div>
                 <div className={style.paymentcontent}>
                   <h5>{card.title}</h5>
