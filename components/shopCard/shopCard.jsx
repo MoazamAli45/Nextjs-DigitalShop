@@ -33,7 +33,7 @@ const ShopCard = (props) => {
     <>
       <div
         className={style["shop-card"]}
-        style={{ width: `${width}`, "margin-right": `${marginRight} !important ` }}
+        style={{ width: `${width}`, "margin-sight": `${marginRight} !important ` }}
       >
         <div className={style.image}>
           {sale && <span className={style.sale}>Sale!</span>}
